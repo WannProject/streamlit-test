@@ -19,118 +19,121 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ===== CUSTOM CSS PROFESIONAL =====
+# ===== CUSTOM CSS TEMA GELAP PROFESIONAL =====
 st.markdown("""
     <style>
-    /* Global Styles */
+    /* Global Dark Theme Styles */
     .main {
         padding: 2rem;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
         min-height: 100vh;
+        color: #e0e0e0;
     }
     
     .stApp {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
+        color: #e0e0e0;
     }
     
-    /* Header Styles */
+    /* Header Styles - Dark Theme */
     .main-header {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 45, 0.95);
         padding: 2rem;
         border-radius: 20px;
         margin-bottom: 2rem;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        color: #e0e0e0;
     }
     
-    /* Card Styles */
+    /* Card Styles - Dark Theme */
     .card {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 45, 0.95);
         padding: 1.5rem;
         border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         margin-bottom: 1rem;
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        transition: box-shadow 0.3s ease;
+        color: #e0e0e0;
     }
     
+    /* Remove hover translate effect */
     .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     }
     
-    /* Metric Cards */
+    /* Metric Cards - Dark Theme */
     .metric-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        color: #e0e0e0;
         padding: 1.5rem;
         border-radius: 15px;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease;
+        border: 1px solid rgba(102, 126, 234, 0.3);
     }
     
     .metric-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
     }
     
-    /* Enhanced Streamlit Metrics */
+    /* Enhanced Streamlit Metrics - Dark Theme */
     div[data-testid="metric-container"] {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border: none;
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        border: 1px solid rgba(102, 126, 234, 0.3);
         padding: 1rem;
         border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease;
+        color: #e0e0e0;
     }
     
     div[data-testid="metric-container"]:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
     }
     
     div[data-testid="metric-container"] label {
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(224, 224, 224, 0.9);
         font-weight: 600;
         font-size: 0.9rem;
     }
     
     div[data-testid="metric-container"] div[data-testid="metric-value"] {
-        color: white;
+        color: #ffffff;
         font-weight: 700;
         font-size: 1.8rem;
     }
     
-    /* Sidebar Styles */
-    .css-1d391kg {
-        background: rgba(255, 255, 255, 0.95);
+    /* Sidebar Styles - Dark Theme */
+    .css-1d391kg, .css-1lcbmhc, .st-emotion-cache-1wrcq25, .st-emotion-cache-13ln4jf {
+        background: rgba(30, 30, 45, 0.95) !important;
         backdrop-filter: blur(10px);
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(102, 126, 234, 0.3);
+        color: #e0e0e0;
     }
     
-    .css-1lcbmhc {
-        background: rgba(255, 255, 255, 0.95);
-    }
-    
-    /* Tab Styles */
+    /* Tab Styles - Dark Theme */
     .stTabs [data-baseweb="tab-list"] {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 45, 0.95);
         border-radius: 15px;
         padding: 0.5rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
+        border: 1px solid rgba(102, 126, 234, 0.3);
     }
     
     .stTabs [data-baseweb="tab"] {
-        background: rgba(102, 126, 234, 0.1);
+        background: rgba(45, 55, 72, 0.8);
         border-radius: 10px;
         padding: 0.75rem 1.5rem;
         font-weight: 600;
         transition: all 0.3s ease;
+        color: #e0e0e0;
+        border: 1px solid rgba(102, 126, 234, 0.2);
     }
     
     .stTabs [aria-selected="true"] {
@@ -138,7 +141,7 @@ st.markdown("""
         color: white;
     }
     
-    /* Button Styles */
+    /* Button Styles - Dark Theme */
     .stButton > button {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
@@ -151,69 +154,93 @@ st.markdown("""
     }
     
     .stButton > button:hover {
-        transform: translateY(-2px);
         box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
     }
     
-    /* Dataframe Styles */
+    /* Dataframe Styles - Dark Theme */
     .dataframe {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 45, 0.95);
         border-radius: 15px;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        color: #e0e0e0;
     }
     
-    /* Success/Warning/Info Messages */
+    /* Success/Warning/Info Messages - Dark Theme */
     .stSuccess {
-        background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+        background: linear-gradient(135deg, #2d5a2d 0%, #1e3a1e 100%);
         border-radius: 10px;
         padding: 1rem;
+        color: #e0e0e0;
     }
     
     .stWarning {
-        background: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%);
+        background: linear-gradient(135deg, #5a4a2d 0%, #3a2e1e 100%);
         border-radius: 10px;
         padding: 1rem;
+        color: #e0e0e0;
     }
     
     .stInfo {
-        background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+        background: linear-gradient(135deg, #2d4a5a 0%, #1e2e3a 100%);
         border-radius: 10px;
         padding: 1rem;
+        color: #e0e0e0;
     }
     
-    /* Plotly Charts */
+    /* Plotly Charts - Dark Theme */
     .js-plotly-plot {
         border-radius: 15px;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
     
-    /* Selectbox/Slider Styles */
+    /* Selectbox/Slider Styles - Dark Theme */
     .stSelectbox > div > div {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 45, 0.95);
         border-radius: 10px;
+        color: #e0e0e0;
     }
     
     .stSlider > div > div > div {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
     
-    /* Footer Styles */
+    /* Input Fields - Dark Theme */
+    .stTextInput > div > div > input,
+    .stNumberInput > div > div > input,
+    .stSelectbox > div > div > div {
+        background: rgba(45, 55, 72, 0.8);
+        color: #e0e0e0;
+        border: 1px solid rgba(102, 126, 234, 0.3);
+    }
+    
+    /* Text Colors - Dark Theme */
+    h1, h2, h3, h4, h5, h6 {
+        color: #e0e0e0;
+    }
+    
+    p, span, div {
+        color: #e0e0e0;
+    }
+    
+    /* Footer Styles - Dark Theme */
     .footer {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 45, 0.95);
         padding: 2rem;
         border-radius: 15px;
         text-align: center;
         margin-top: 2rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        color: #e0e0e0;
     }
     
     /* Animations */
     @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
     
     .fade-in {
@@ -224,26 +251,39 @@ st.markdown("""
     .stSpinner > div {
         border-top-color: #667eea;
     }
+    
+    /* Remove all transform translate effects */
+    * {
+        transform: none !important;
+    }
+    
+    /* Hover effects without translate */
+    .stButton > button:hover,
+    .metric-card:hover,
+    .card:hover,
+    div[data-testid="metric-container"]:hover {
+        transform: none !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 
-# ===== HEADER PROFESIONAL =====
+# ===== HEADER PROFESIONAL TEMA GELAP =====
 st.markdown("""
     <div class="main-header fade-in">
-        <h1 style="text-align: center; color: #2d3748; margin-bottom: 0.5rem;">
+        <h1 style="text-align: center; color: #e0e0e0; margin-bottom: 0.5rem;">
             🚀 Professional Data Analytics & ML Dashboard
         </h1>
-        <p style="text-align: center; color: #718096; font-size: 1.1rem;">
+        <p style="text-align: center; color: #a0aec0; font-size: 1.1rem;">
             Advanced Data Analysis, Visualization & Machine Learning Platform
         </p>
     </div>
     """, unsafe_allow_html=True)
 
-# ===== SIDEBAR ENHANCED =====
+# ===== SIDEBAR ENHANCED TEMA GELAP =====
 with st.sidebar:
     st.markdown("""
         <div class="card">
-            <h2 style="color: #2d3748; margin-bottom: 1rem;">⚙️ Configuration Panel</h2>
+            <h2 style="color: #e0e0e0; margin-bottom: 1rem;">⚙️ Configuration Panel</h2>
         </div>
         """, unsafe_allow_html=True)
     
@@ -269,8 +309,8 @@ with st.sidebar:
     # Enhanced tips section
     st.markdown("""
         <div class="card">
-            <h4 style="color: #2d3748; margin-bottom: 0.5rem;">💡 Pro Tips</h4>
-            <ul style="color: #4a5568; font-size: 0.9rem; margin: 0;">
+            <h4 style="color: #e0e0e0; margin-bottom: 0.5rem;">💡 Pro Tips</h4>
+            <ul style="color: #a0aec0; font-size: 0.9rem; margin: 0;">
                 <li>Upload your own dataset or use sample data</li>
                 <li>Explore multiple visualization options</li>
                 <li>Build ML models with one click</li>
@@ -298,8 +338,8 @@ if uploaded_file is not None:
     df = load_data(uploaded_file)
     st.markdown("""
         <div class="card fade-in">
-            <h3 style="color: #2d3748; margin-bottom: 0.5rem;">✅ Dataset Loaded Successfully!</h3>
-            <p style="color: #4a5568; margin: 0;">
+            <h3 style="color: #e0e0e0; margin-bottom: 0.5rem;">✅ Dataset Loaded Successfully!</h3>
+            <p style="color: #a0aec0; margin: 0;">
                 <strong>{:,}</strong> rows • <strong>{:,}</strong> columns
             </p>
         </div>
@@ -308,8 +348,8 @@ elif use_sample:
     df = load_sample_data()
     st.markdown("""
         <div class="card fade-in">
-            <h3 style="color: #2d3748; margin-bottom: 0.5rem;">📋 Sample Dataset Loaded</h3>
-            <p style="color: #4a5568; margin: 0;">
+            <h3 style="color: #e0e0e0; margin-bottom: 0.5rem;">📋 Sample Dataset Loaded</h3>
+            <p style="color: #a0aec0; margin: 0;">
                 Using the famous Iris dataset for demonstration
             </p>
         </div>
@@ -318,7 +358,7 @@ else:
     st.markdown("""
         <div class="card">
             <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Dataset Selected</h3>
-            <p style="color: #4a5568; margin: 0;">
+            <p style="color: #a0aec0; margin: 0;">
                 Please upload a dataset or use the sample dataset to continue
             </p>
         </div>
@@ -334,11 +374,11 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📥 Export & Share"
 ])
 
-# ===== TAB 1: OVERVIEW ENHANCED =====
+# ===== TAB 1: OVERVIEW ENHANCED TEMA GELAP =====
 with tab1:
     st.markdown("""
         <div class="card fade-in">
-            <h2 style="color: #2d3748; margin-bottom: 1rem;">📊 Dataset Overview</h2>
+            <h2 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Dataset Overview</h2>
         </div>
         """, unsafe_allow_html=True)
     
@@ -385,30 +425,30 @@ with tab1:
     with col1:
         st.markdown("""
             <div class="card">
-                <h3 style="color: #2d3748; margin-bottom: 1rem;">🔍 Data Preview</h3>
+                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🔍 Data Preview</h3>
             </div>
             """, unsafe_allow_html=True)
         n_rows = st.slider("Show rows:", 5, 50, 10, help="Select number of rows to display")
-        st.dataframe(df.head(n_rows), use_container_width=True, height=400)
+        st.dataframe(df.head(n_rows), width='stretch', height=400)
     
     with col2:
         st.markdown("""
             <div class="card">
-                <h3 style="color: #2d3748; margin-bottom: 1rem;">📋 Data Types</h3>
+                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📋 Data Types</h3>
             </div>
             """, unsafe_allow_html=True)
         dtype_df = pd.DataFrame({
             'Column': df.dtypes.index,
             'Type': df.dtypes.values
         })
-        st.dataframe(dtype_df, use_container_width=True, hide_index=True, height=400)
+        st.dataframe(dtype_df, width='stretch', hide_index=True, height=400)
     
     st.markdown("---")
     
     # Enhanced column information
     st.markdown("""
         <div class="card">
-            <h3 style="color: #2d3748; margin-bottom: 1rem;">📝 Detailed Column Information</h3>
+            <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📝 Detailed Column Information</h3>
         </div>
         """, unsafe_allow_html=True)
     col_info = pd.DataFrame({
@@ -418,34 +458,34 @@ with tab1:
         'Data Type': df.dtypes.values,
         'Unique Values': [df[col].nunique() for col in df.columns]
     })
-    st.dataframe(col_info, use_container_width=True, hide_index=True, height=300)
+    st.dataframe(col_info, width='stretch', hide_index=True, height=300)
 
-# ===== TAB 2: ADVANCED ANALYTICS =====
+# ===== TAB 2: ADVANCED ANALYTICS TEMA GELAP =====
 with tab2:
     st.markdown("""
         <div class="card fade-in">
-            <h2 style="color: #2d3748; margin-bottom: 1rem;">🔍 Advanced Analytics</h2>
+            <h2 style="color: #e0e0e0; margin-bottom: 1rem;">🔍 Advanced Analytics</h2>
         </div>
         """, unsafe_allow_html=True)
     
     # Enhanced statistics section
     st.markdown("""
         <div class="card">
-            <h3 style="color: #2d3748; margin-bottom: 1rem;">📈 Descriptive Statistics</h3>
+            <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📈 Descriptive Statistics</h3>
         </div>
         """, unsafe_allow_html=True)
     
     numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
     
     if numeric_cols:
-        st.dataframe(df[numeric_cols].describe().T, use_container_width=True, height=300)
+        st.dataframe(df[numeric_cols].describe().T, width='stretch', height=300)
         
         st.markdown("---")
         
         # Enhanced column analysis
         st.markdown("""
             <div class="card">
-                <h3 style="color: #2d3748; margin-bottom: 1rem;">🔬 Detailed Column Analysis</h3>
+                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🔬 Detailed Column Analysis</h3>
             </div>
             """, unsafe_allow_html=True)
         
@@ -516,26 +556,26 @@ with tab2:
         with col1:
             st.markdown("""
                 <div class="card">
-                    <h4 style="color: #2d3748; margin-bottom: 1rem;">📊 Distribution</h4>
+                    <h4 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Distribution</h4>
                 </div>
                 """, unsafe_allow_html=True)
-            fig = px.histogram(df, x=selected_col, nbins=30, 
+            fig = px.histogram(df, x=selected_col, nbins=30,
                              title=f"Distribution of {selected_col}",
                              color_discrete_sequence=['#667eea'])
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         
         with col2:
             st.markdown("""
                 <div class="card">
-                    <h4 style="color: #2d3748; margin-bottom: 1rem;">📊 Box Plot</h4>
+                    <h4 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Box Plot</h4>
                 </div>
                 """, unsafe_allow_html=True)
-            fig = px.box(df, y=selected_col, 
+            fig = px.box(df, y=selected_col,
                         title=f"Box Plot of {selected_col}",
                         color_discrete_sequence=['#764ba2'])
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         
         st.markdown("---")
         
@@ -543,34 +583,34 @@ with tab2:
         if len(numeric_cols) > 1:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">🔗 Correlation Matrix</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🔗 Correlation Matrix</h3>
                 </div>
                 """, unsafe_allow_html=True)
             
             corr = df[numeric_cols].corr()
             
-            fig = px.imshow(corr, 
-                           text_auto=True, 
+            fig = px.imshow(corr,
+                           text_auto=True,
                            aspect="auto",
                            color_continuous_scale='RdBu_r',
                            title="Feature Correlation Heatmap")
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
     else:
         st.markdown("""
             <div class="card">
                 <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Numeric Columns</h3>
-                <p style="color: #4a5568; margin: 0;">
+                <p style="color: #a0aec0; margin: 0;">
                     The dataset doesn't contain any numeric columns for analysis
                 </p>
             </div>
             """, unsafe_allow_html=True)
 
-# ===== TAB 3: INTERACTIVE VISUALIZATIONS =====
+# ===== TAB 3: INTERACTIVE VISUALIZATIONS TEMA GELAP =====
 with tab3:
     st.markdown("""
         <div class="card fade-in">
-            <h2 style="color: #2d3748; margin-bottom: 1rem;">📈 Interactive Visualizations</h2>
+            <h2 style="color: #e0e0e0; margin-bottom: 1rem;">📈 Interactive Visualizations</h2>
         </div>
         """, unsafe_allow_html=True)
     
@@ -590,7 +630,7 @@ with tab3:
         if len(numeric_cols) >= 2:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Scatter Plot Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Scatter Plot Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             col1, col2, col3 = st.columns(3)
@@ -605,12 +645,12 @@ with tab3:
                            title=f"{x_col} vs {y_col}",
                            color_discrete_sequence=px.colors.qualitative.Set3)
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Insufficient Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Scatter plot requires at least 2 numeric columns
                     </p>
                 </div>
@@ -620,7 +660,7 @@ with tab3:
         if numeric_cols:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">📈 Line Chart Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📈 Line Chart Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             selected_cols = st.multiselect("Select Columns:", numeric_cols, default=numeric_cols[:2])
@@ -628,12 +668,12 @@ with tab3:
                 fig = px.line(df, y=selected_cols, title="Multi-Line Chart",
                             color_discrete_sequence=px.colors.qualitative.Set3)
                 fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Numeric Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Line chart requires numeric columns
                     </p>
                 </div>
@@ -643,7 +683,7 @@ with tab3:
         if categorical_cols and numeric_cols:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Bar Chart Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Bar Chart Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
@@ -657,12 +697,12 @@ with tab3:
                         title=f"Average {num_col} by {cat_col}",
                         color_discrete_sequence=['#667eea'])
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Missing Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Bar chart requires both categorical and numeric columns
                     </p>
                 </div>
@@ -672,7 +712,7 @@ with tab3:
         if numeric_cols:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Histogram Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Histogram Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             col = st.selectbox("Select Column:", numeric_cols)
@@ -680,12 +720,12 @@ with tab3:
             fig = px.histogram(df, x=col, nbins=bins, title=f"Distribution of {col}",
                              color_discrete_sequence=['#764ba2'])
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Numeric Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Histogram requires numeric columns
                     </p>
                 </div>
@@ -695,7 +735,7 @@ with tab3:
         if numeric_cols:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Box Plot Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Box Plot Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
@@ -707,12 +747,12 @@ with tab3:
             fig = px.box(df, x=x_col, y=y_col, title=f"Box Plot: {y_col}",
                         color_discrete_sequence=['#667eea'])
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Numeric Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Box plot requires numeric columns
                     </p>
                 </div>
@@ -722,7 +762,7 @@ with tab3:
         if numeric_cols:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">🎻 Violin Plot Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🎻 Violin Plot Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
@@ -734,12 +774,12 @@ with tab3:
             fig = px.violin(df, x=x_col, y=y_col, box=True, title=f"Violin Plot: {y_col}",
                           color_discrete_sequence=['#764ba2'])
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Numeric Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Violin plot requires numeric columns
                     </p>
                 </div>
@@ -749,7 +789,7 @@ with tab3:
         if categorical_cols:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">🥧 Pie Chart Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🥧 Pie Chart Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             col = st.selectbox("Select Column:", categorical_cols)
@@ -758,12 +798,12 @@ with tab3:
                         title=f"Distribution of {col}",
                         color_discrete_sequence=px.colors.qualitative.Set3)
             fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ No Categorical Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Pie chart requires categorical columns
                     </p>
                 </div>
@@ -773,21 +813,21 @@ with tab3:
         if len(numeric_cols) >= 2:
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">🔗 Pair Plot Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🔗 Pair Plot Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
-            selected_cols = st.multiselect("Select Columns (max 4):", numeric_cols, 
+            selected_cols = st.multiselect("Select Columns (max 4):", numeric_cols,
                                           default=numeric_cols[:min(4, len(numeric_cols))])
             if len(selected_cols) >= 2:
                 fig = px.scatter_matrix(df[selected_cols], title="Pair Plot Matrix",
                                        color_discrete_sequence=px.colors.qualitative.Set3)
                 fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
             else:
                 st.markdown("""
                     <div class="card">
                         <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Insufficient Columns</h3>
-                        <p style="color: #4a5568; margin: 0;">
+                        <p style="color: #a0aec0; margin: 0;">
                             Please select at least 2 columns for pair plot
                         </p>
                     </div>
@@ -796,17 +836,17 @@ with tab3:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Insufficient Columns</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Pair plot requires at least 2 numeric columns
                     </p>
                 </div>
                 """, unsafe_allow_html=True)
 
-# ===== TAB 4: ML STUDIO ENHANCED =====
+# ===== TAB 4: ML STUDIO ENHANCED TEMA GELAP =====
 with tab4:
     st.markdown("""
         <div class="card fade-in">
-            <h2 style="color: #2d3748; margin-bottom: 1rem;">🤖 Machine Learning Studio</h2>
+            <h2 style="color: #e0e0e0; margin-bottom: 1rem;">🤖 Machine Learning Studio</h2>
         </div>
         """, unsafe_allow_html=True)
     
@@ -818,7 +858,7 @@ with tab4:
         # Enhanced feature selection
         st.markdown("""
             <div class="card">
-                <h3 style="color: #2d3748; margin-bottom: 1rem;">1️⃣ Feature & Target Selection</h3>
+                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">1️⃣ Feature & Target Selection</h3>
             </div>
             """, unsafe_allow_html=True)
         
@@ -860,7 +900,7 @@ with tab4:
             # Enhanced model configuration
             st.markdown("""
                 <div class="card">
-                    <h3 style="color: #2d3748; margin-bottom: 1rem;">2️⃣ Model Configuration</h3>
+                    <h3 style="color: #e0e0e0; margin-bottom: 1rem;">2️⃣ Model Configuration</h3>
                 </div>
                 """, unsafe_allow_html=True)
             
@@ -895,7 +935,7 @@ with tab4:
                         
                         st.markdown("""
                             <div class="card fade-in">
-                                <h3 style="color: #2d3748; margin-bottom: 1rem;">✅ Model Training Complete!</h3>
+                                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">✅ Model Training Complete!</h3>
                             </div>
                             """, unsafe_allow_html=True)
                         
@@ -904,7 +944,7 @@ with tab4:
                         # Enhanced performance metrics
                         st.markdown("""
                             <div class="card">
-                                <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Model Performance</h3>
+                                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Model Performance</h3>
                             </div>
                             """, unsafe_allow_html=True)
                         
@@ -935,7 +975,7 @@ with tab4:
                         st.markdown("---")
                         st.markdown("""
                             <div class="card">
-                                <h3 style="color: #2d3748; margin-bottom: 1rem;">🎯 Confusion Matrix</h3>
+                                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🎯 Confusion Matrix</h3>
                             </div>
                             """, unsafe_allow_html=True)
                         
@@ -947,7 +987,7 @@ with tab4:
                                       title="Confusion Matrix",
                                       color_continuous_scale='Blues')
                         fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-                        st.plotly_chart(fig, use_container_width=True)
+                        st.plotly_chart(fig, width='stretch')
                         
                     else:
                         model = RandomForestRegressor(
@@ -963,7 +1003,7 @@ with tab4:
                         
                         st.markdown("""
                             <div class="card fade-in">
-                                <h3 style="color: #2d3748; margin-bottom: 1rem;">✅ Model Training Complete!</h3>
+                                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">✅ Model Training Complete!</h3>
                             </div>
                             """, unsafe_allow_html=True)
                         
@@ -972,7 +1012,7 @@ with tab4:
                         # Enhanced performance metrics
                         st.markdown("""
                             <div class="card">
-                                <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Model Performance</h3>
+                                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Model Performance</h3>
                             </div>
                             """, unsafe_allow_html=True)
                         
@@ -1010,7 +1050,7 @@ with tab4:
                         st.markdown("---")
                         st.markdown("""
                             <div class="card">
-                                <h3 style="color: #2d3748; margin-bottom: 1rem;">📈 Actual vs Predicted</h3>
+                                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📈 Actual vs Predicted</h3>
                             </div>
                             """, unsafe_allow_html=True)
                         
@@ -1022,13 +1062,13 @@ with tab4:
                                                mode='lines', name='Perfect Prediction',
                                                line=dict(color='red', dash='dash')))
                         fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-                        st.plotly_chart(fig, use_container_width=True)
+                        st.plotly_chart(fig, width='stretch')
                     
                     # Enhanced feature importance
                     st.markdown("---")
                     st.markdown("""
                         <div class="card">
-                            <h3 style="color: #2d3748; margin-bottom: 1rem;">🎯 Feature Importance</h3>
+                            <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🎯 Feature Importance</h3>
                         </div>
                         """, unsafe_allow_html=True)
                     
@@ -1041,12 +1081,12 @@ with tab4:
                                orientation='h', title='Feature Importance Ranking',
                                color_discrete_sequence=['#667eea'])
                     fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
-                    st.plotly_chart(fig, use_container_width=True)
+                    st.plotly_chart(fig, width='stretch')
         else:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Missing Selection</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Please select target and at least 1 feature variable
                     </p>
                 </div>
@@ -1055,30 +1095,30 @@ with tab4:
         st.markdown("""
             <div class="card">
                 <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Insufficient Data</h3>
-                <p style="color: #4a5568; margin: 0;">
+                <p style="color: #a0aec0; margin: 0;">
                     Dataset must have at least 2 numeric columns for machine learning
                 </p>
             </div>
             """, unsafe_allow_html=True)
 
-# ===== TAB 5: EXPORT & SHARE ENHANCED =====
+# ===== TAB 5: EXPORT & SHARE ENHANCED TEMA GELAP =====
 with tab5:
     st.markdown("""
         <div class="card fade-in">
-            <h2 style="color: #2d3748; margin-bottom: 1rem;">📥 Export & Share Results</h2>
+            <h2 style="color: #e0e0e0; margin-bottom: 1rem;">📥 Export & Share Results</h2>
         </div>
         """, unsafe_allow_html=True)
     
     # Enhanced preview section
     st.markdown("""
         <div class="card">
-            <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Data Preview</h3>
-            <p style="color: #4a5568; margin: 0;">
+            <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Data Preview</h3>
+            <p style="color: #a0aec0; margin: 0;">
                 Preview of the data that will be exported
             </p>
         </div>
         """, unsafe_allow_html=True)
-    st.dataframe(df.head(10), use_container_width=True, height=300)
+    st.dataframe(df.head(10), width='stretch', height=300)
     
     st.markdown("---")
     
@@ -1088,8 +1128,8 @@ with tab5:
     with col1:
         st.markdown("""
             <div class="card">
-                <h3 style="color: #2d3748; margin-bottom: 1rem;">💾 CSV Export</h3>
-                <p style="color: #4a5568; margin: 0;">
+                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">💾 CSV Export</h3>
+                <p style="color: #a0aec0; margin: 0;">
                     Download data in CSV format
                 </p>
             </div>
@@ -1106,8 +1146,8 @@ with tab5:
     with col2:
         st.markdown("""
             <div class="card">
-                <h3 style="color: #2d3748; margin-bottom: 1rem;">📊 Excel Export</h3>
-                <p style="color: #4a5568; margin: 0;">
+                <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📊 Excel Export</h3>
+                <p style="color: #a0aec0; margin: 0;">
                     Download data in Excel format
                 </p>
             </div>
@@ -1130,7 +1170,7 @@ with tab5:
             st.markdown("""
                 <div class="card">
                     <h3 style="color: #f56565; margin-bottom: 0.5rem;">⚠️ Missing Dependency</h3>
-                    <p style="color: #4a5568; margin: 0;">
+                    <p style="color: #a0aec0; margin: 0;">
                         Install openpyxl for Excel export: <code>pip install openpyxl</code>
                     </p>
                 </div>
@@ -1141,8 +1181,8 @@ with tab5:
     # Enhanced statistics export
     st.markdown("""
         <div class="card">
-            <h3 style="color: #2d3748; margin-bottom: 1rem;">📈 Export Statistics</h3>
-            <p style="color: #4a5568; margin: 0;">
+            <h3 style="color: #e0e0e0; margin-bottom: 1rem;">📈 Export Statistics</h3>
+            <p style="color: #a0aec0; margin: 0;">
                 Download summary statistics of your data
             </p>
         </div>
@@ -1195,12 +1235,12 @@ with tab5:
                 help="Download data summary information"
             )
 
-# ===== PROFESSIONAL FOOTER =====
+# ===== PROFESSIONAL FOOTER TEMA GELAP =====
 st.markdown("---")
 st.markdown("""
     <div class="footer fade-in">
-        <h3 style="color: #2d3748; margin-bottom: 1rem;">🚀 Professional Data Analytics Dashboard</h3>
-        <p style="color: #4a5568; margin-bottom: 1rem;">
+        <h3 style="color: #e0e0e0; margin-bottom: 1rem;">🚀 Professional Data Analytics Dashboard</h3>
+        <p style="color: #a0aec0; margin-bottom: 1rem;">
             Advanced analytics platform powered by modern data science technologies
         </p>
         <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem;">
@@ -1213,7 +1253,7 @@ st.markdown("""
             Built with ❤️ using Streamlit • Powered by wanndev • © 2025
         </p>
         <p style="color: #a0aec0; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
-            Version 2.0 • Professional Edition
+            Version 2.0 • Dark Edition
         </p>
     </div>
     """, unsafe_allow_html=True)
